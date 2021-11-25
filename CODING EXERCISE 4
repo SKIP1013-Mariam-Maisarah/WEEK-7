@@ -1,0 +1,32 @@
+package looping;
+import java.util.Scanner;
+public class Exercise4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Generate a random number to be guessed
+		
+		
+		int number = (int)(Math.random() * 11);
+		Scanner scan = new Scanner (System.in);
+		int j;
+		int i = 1;
+		System.out.println("Ini adalah sistem meneka nombor");
+		
+		
+		while (1 != number) {
+			System.out.println("Enter number from 1 - 10");
+			j = scan.nextInt();
+			if (j == number) {
+				System.out.println("Tahniah");
+			}else if (j <= number) {
+				System.out.println("Maaf nombor terlalu kecil");
+			}else {
+				System.out.println("Maaf nombor terlalu besar");
+			}
+		}
+		
+	}
+
+}
